@@ -39,6 +39,81 @@ class Musician(object):
         self.name = name
         self.genre = genre
 ```
-Now we have our blueprint for our Musician, but we haven’t created any actual musicians yet. To do that we need to create instances of our class, these instances are our objects. We do that through instantiation, which means through calling the class, like we would call a function. We can give each new instance it's own name and genre.
++ class statement establishing a new class called Musician
++ members of the class Musician are defined with the __init__() method, whose first argument is self, followed by whatever additional arguments you choose.
++ within the __init__() we have our instance variables assigning our arguments.
 
-(Need to add the rest)
+Now we have our blueprint for our Musician.
+
+Let's create some Musicians, some instances of the class object. We do that through **instantiation**, which means through calling the class, like we would call a function. We can give each new instance it's own name and genre.
+
+For example:
+```python
+beyonce = Musician('Beyonce' , 'R&B')
+```
+We can make as many instances of Musician as we want. They’ll all be added to our class of Musicians.
+
+The arguments we add to our class are descriptors that allow us to add more data to our objects, the methods we add to the class provide actions for our objects to execute.
+
+You could continue to add arguments and methods to this class to add more information and specificity to each instance of Musician that you create.
+
+**PARTNER PROGRAMNING**:
+Great! Save your musician.py file for now. With a partner, try creating your own class and instantiating some objects in that class! Let’s put these blueprints to work inside their little factories and churn out some objects!
+
+What did you make a class of, what were the arguments you used to define your class?
+
+**Adding Methods:**
++ Let's add a method to our Musician class that will describe an instance of musician for us.
+
+```python
+class Musician(object):
+
+    def __init__(self,name,genre,fav_album):
+        self.name = name
+        self.genre = genre
+        self.fav_album = album
+
+    def description(self):
+        print "Hey, my name is {0}, I make {1} music. Check out my album {2}." format(self.name, self.genre, self.album)
+
+kanye = Musician('Kanye', 'Rap', 'Yeezus')
+```
++ Let's call that method:
+
+```python
+kanye.description()
+```
+
++ Let’s add another that tells us if the musician is currently recording. We’ll need a new method and a new argument for our object that has a boolean value:
+
+```python
+class Musician(object):
+    def __init__(self,name,genre,fav_album):
+        self.name = name
+        self.genre = genre
+        self.fav_album = album
+
+    def description(self):
+        print "Hey, my name is {0}, I make {1} music. Check out my album {}." format(self.name, self.genre, self.album)
+
+    def is_in_studio:
+        if self.recording:
+            print "Yo, I'm in the studio recording some fresh tracks! Holla at me later!"
+        else:
+            print "Hoping to get in the studio soon, I know you are jonesing for new material!"
+
+
+kanye = Musician('Kanye', 'Rap', 'Yeezus', True)
+```
+
++ Let's call our new method on our instance:
+
+```python
+kanye.is_in_studio()
+```
+**PARTNER PROGRAMMING**:
+Try adding a couple methods of your own to the class you made earlier. What actions make sense for the class of objects?
+
+#Conclusion:
+
+As you can see, there is more than one way of designing your code. There is a lot more that can be learned about Classes and the advantages working within this structure can provide, if you are interested you can continue learning about Object Orientation on your own. For now, familiarity with class structure for Python will be useful to us next week when we get into learning AppEngine. We’ll see python class again there.
