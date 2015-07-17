@@ -53,10 +53,10 @@ class Musician(object):
     def __init__(self,name,genre,fav_album):
         self.name = name
         self.genre = genre
-        self.fav_album = album
+        self.fav_album = fav_album
 
     def description(self):
-        print "Hey, my name is {0}, I make {1} music. Check out my album {2}." format(self.name, self.genre, self.album)
+        print "Hey, my name is {0}, I make {1} music. Check out my album {2}." .format(self.name, self.genre, self.fav_album)
 
 kanye = Musician('Kanye', 'Rap', 'Yeezus')
 ```
@@ -70,13 +70,14 @@ kanye.description()
 
 ```python
 class Musician(object):
-    def __init__(self,name,genre,fav_album):
+    def __init__(self,name,genre,fav_album, recording):
         self.name = name
         self.genre = genre
-        self.fav_album = album
+        self.fav_album = fav_album
+        self.recording = recording
 
     def description(self):
-        print "Hey, my name is {0}, I make {1} music. Check out my album {}." format(self.name, self.genre, self.album)
+        print "Hey, my name is {0}, I make {1} music. Check out my album {2}." .format(self.name, self.genre, self.album)
 
     def is_in_studio(self):
         if self.recording:
