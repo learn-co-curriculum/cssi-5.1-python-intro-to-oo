@@ -86,8 +86,8 @@ class Musician(object):
         else:
             print "Hoping to get in the studio soon, I know you are jonesing for new material!"
 
+kanye = Musician('Kanye', 'Rap', 'Yeezus', False)
 
-kanye = Musician('Kanye', 'Rap', 'Yeezus', True)
 ```
 
 + We can call our new method on our instance:
