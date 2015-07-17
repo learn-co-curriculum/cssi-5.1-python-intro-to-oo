@@ -78,7 +78,7 @@ class Musician(object):
     def description(self):
         print "Hey, my name is {0}, I make {1} music. Check out my album {}." format(self.name, self.genre, self.album)
 
-    def is_in_studio:
+    def is_in_studio(self):
         if self.recording:
             print "Yo, I'm in the studio recording some fresh tracks! Holla at me later!"
         else:
