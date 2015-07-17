@@ -50,7 +50,7 @@ We can make as many instances of Musician as we want. They’ll all be added to 
 ```python
 class Musician(object):
 
-    def __init__(self,name,genre,fav_album):
+    def __init__(self, name, genre, fav_album):
         self.name = name
         self.genre = genre
         self.fav_album = fav_album
@@ -70,7 +70,8 @@ kanye.description()
 
 ```python
 class Musician(object):
-    def __init__(self,name,genre,fav_album, recording):
+
+    def __init__(self, name, genre, fav_album, recording):
         self.name = name
         self.genre = genre
         self.fav_album = fav_album
