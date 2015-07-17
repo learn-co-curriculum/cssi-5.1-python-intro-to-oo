@@ -50,10 +50,9 @@ We can make as many instances of Musician as we want. They’ll all be added to 
 ```python
 class Musician(object):
 
-    def __init__(self,name,genre,fav_album):
+    def __init__(self,name,genre):
         self.name = name
         self.genre = genre
-        self.fav_album = fav_album
 
     def description(self):
         print "Hey, my name is {0}, I make {1} music. Check out my album {2}." .format(self.name, self.genre, self.fav_album)
