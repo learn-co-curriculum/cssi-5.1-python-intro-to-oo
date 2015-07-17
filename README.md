@@ -78,7 +78,7 @@ class Musician(object):
         self.recording = recording
 
     def description(self):
-        print "Hey, my name is {0}, I make {1} music. Check out my album {2}." .format(self.name, self.genre, self.album)
+        print "Hey, my name is {0}, I make {1} music. Check out my album {2}." .format(self.name, self.genre, self.fav_album)
 
     def is_in_studio(self):
         if self.recording:
