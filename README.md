@@ -1,8 +1,4 @@
----
-tags: cssi, python, OO, classes, methods, variables
-level: 2
-languages: python
----
+
 
 #Object Orientation for Python: Creating Classes
 
