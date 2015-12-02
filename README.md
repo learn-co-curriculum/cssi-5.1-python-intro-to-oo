@@ -91,3 +91,5 @@ kanye = Musician('Kanye', 'Rap', 'Yeezus', False)
 ```python
 kanye.is_in_studio()
 ```
+
+<a href='https://learn.co/lessons/cssi-5.1-python-intro-to-oo' data-visibility='hidden'>View this lesson on Learn.co</a>
