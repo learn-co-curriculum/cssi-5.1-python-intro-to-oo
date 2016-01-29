@@ -92,4 +92,4 @@ kanye = Musician('Kanye', 'Rap', 'Yeezus', False)
 kanye.is_in_studio()
 ```
 
-<a href='https://learn.co/lessons/cssi-5.1-python-intro-to-oo' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cssi-5.1-python-intro-to-oo' title='Object Orientation for Python: Creating Classes'>Object Orientation for Python: Creating Classes</a> on Learn.co and start learning to code for free.</p>
